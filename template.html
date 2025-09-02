@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>{{title}} - Blog Artigea</title>
+<meta content="{{description}}" name="description"/>
+<meta content="{{keywords}}" name="keywords"/>
+<meta content="Artigea s.r.l." name="author"/>
+<!-- Open Graph / Facebook -->
+<meta content="article" property="og:type"/>
+<meta content="https://www.artigea.it/blog/{{slug}}.html" property="og:url"/>
+<meta content="{{title}}" property="og:title"/>
+<meta content="{{description}}" property="og:description"/>
+<meta content="../assets/./blog/{{slug}}-og.jpg" property="og:image"/>
+<meta content="{{published_date}}" property="article:published_time"/>
+<meta content="Artigea s.r.l." property="article:author"/>
+<meta content="{{category}}" property="article:section"/>
+<!-- Twitter -->
+<meta content="summary_large_image" property="twitter:card"/>
+<meta content="https://www.artigea.it/blog/{{slug}}.html" property="twitter:url"/>
+<meta content="{{title}}" property="twitter:title"/>
+<meta content="{{description}}" property="twitter:description"/>
+<meta content="../assets/./blog/{{slug}}-og.jpg" property="twitter:image"/>
+<!-- Favicon -->
+<link href="../img/logo.svg" rel="shortcut icon" type="image/x-icon"/>
+<!-- Canonical URL -->
+<link href="https://www.artigea.it/blog/{{slug}}.html" rel="canonical"/>
+<!-- Stylesheet -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/> <link href="../css/main.css" rel="stylesheet"/>
+<link href="../css/components.css" rel="stylesheet"/>
+<link href="../css/blog.css" rel="stylesheet"/>
+<link href="../css/mobile-responsive.css" rel="stylesheet"/>
+<!-- Google Analytics GA4 -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            'anonymize_ip': true,
+            'cookie_flags': 'max-age=7200;secure;samesite=none'
+        });
+    </script>
+<!-- JSON-LD Article Schema -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{title}}",
+        "description": "{{description}}",
+        "image": "https://www.artigea.it/blog/{{slug}}-cover.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Artigea s.r.l.",
+            "url": "https://www.artigea.it"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Artigea s.r.l.",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.artigea.it/assets/logo.svg"
+            }
+        },
+        "datePublished": "{{published_date}}",
+        "dateModified": "{{modified_date}}",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://www.artigea.it/blog/{{slug}}.html"
+        },
+        "articleSection": "{{category}}",
+        "keywords": "{{keywords}}"
+    }
+    </script>
+</head>
+<body class="blog-scope">
+<!-- Header -->
+<header class="header">
+<nav class="nav container">
+<div class="nav__brand">
+<a href="../index.html">
+<img alt="Logo Artigea s.r.l. - Pulizie Professionali Pisa" class="nav__logo" src=".././img/logo.svg"/>
+</a>
+</div>
+<ul class="nav__menu" id="nav-menu">
+<li class="nav__item">
+<a class="nav__link" href="../index.html">Home</a>
+</li>
+<li class="nav__item">
+<a class="nav__link" href="../index.html#chi-siamo">Chi Siamo</a>
+</li>
+<li class="nav__item">
+<a class="nav__link" href="../index.html#servizi">Servizi</a>
+</li>
+<li class="nav__item">
+<a class="nav__link" href="../index.html#lavora-con-noi">Lavora con Noi</a>
+</li>
+<li class="nav__item">
+<a class="nav__link active" href="index.html">Blog</a>
+</li>
+<li class="nav__item">
+<a class="nav__link" href="../index.html#contatti">Contatti</a>
+</li>
+<li class="nav__item">
+<a class="nav__link nav__phone" href="tel:+393462319824">
+<span class="phone-icon">📞</span>
+                        346 231 9824
+                    </a>
+</li>
+</ul>
+<div class="nav__toggle" id="nav-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</nav>
+</header>
+<!-- Main Content -->
+<main class="blog-post">
+<!-- Breadcrumb -->
+<nav aria-label="Percorso" class="breadcrumb container">
+<ol class="breadcrumb__list">
+<li class="breadcrumb__item">
+<a class="breadcrumb__link" href="../index.html">Home</a>
+</li>
+<li class="breadcrumb__item">
+<a class="breadcrumb__link" href="index.html">Blog</a>
+</li>
+<li aria-current="page" class="breadcrumb__item breadcrumb__item--current">
+                    {{title}}
+                </li>
+</ol>
+</nav>
+<!-- Article Header -->
+<header class="article-header">
+<div class="container">
+<div class="article-meta">
+<span class="article-category">{{category}}</span>
+<time class="article-date" datetime="2025-05-28">28 Maggio 2025</time>
+<span class="article-reading-time">Aggiornato: 01 gennaio – oggi</span>
+</div>
+<h1 class="article-title">{{title}}</h1>
+<!-- Featured Image -->
+<div class="article-image">
+<img alt="{{title}}" class="article-featured-image" loading="eager" src=".././img/logo.svg"/>
+</div>
+</div>
+</header>
+<!-- Article Content -->
+<article class="article-content">
+<div class="container">
+<div class="article-body">
+<!-- CONTENT PLACEHOLDER - Replace with actual article content -->
+<p>Questo è il template base per gli articoli del blog. Sostituisci questo contenuto con il testo dell'articolo.</p>
+<h2>Esempio di Sottotitolo</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<h3>Sottosezione</h3>
+<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<ul>
+<li>Punto elenco 1</li>
+<li>Punto elenco 2</li>
+<li>Punto elenco 3</li>
+</ul>
+<blockquote class="article-quote">
+                        "Citazione di esempio per evidenziare concetti importanti nell'articolo."
+                    </blockquote>
+<p>Continua con il resto del contenuto dell'articolo...</p>
+<!-- END CONTENT PLACEHOLDER -->
+</div>
+<!-- Article Sidebar -->
+<aside class="article-sidebar">
+<!-- Author Info -->
+<div class="author-card">
+<div class="author-info">
+<h3>Artigea s.r.l.</h3>
+<p>Esperti in servizi di pulizia professionale a Pisa e provincia. Condividiamo consigli utili per la pulizia e l'igiene.</p>
+</div>
+</div>
+<!-- Contact CTA -->
+<div class="sidebar-cta">
+<h3>Hai bisogno di pulizie professionali?</h3>
+<p>Contattaci per un preventivo gratuito</p>
+<a class="btn btn--primary" href="../index.html#contatti">Richiedi Preventivo</a>
+<a class="btn btn--outline" href="tel:+393462319824">
+<span class="btn__icon">📞</span>
+                            346 231 9824
+                        </a>
+</div>
+<!-- Share Buttons -->
+<div class="share-buttons">
+<h4>Condividi questo articolo</h4>
+<div class="share-buttons__list">
+<a class="share-btn share-btn--facebook" href="#" onclick="shareOnFacebook()">
+                                Facebook
+                            </a>
+<a class="share-btn share-btn--twitter" href="#" onclick="shareOnTwitter()">
+                                Twitter
+                            </a>
+<a class="share-btn share-btn--linkedin" href="#" onclick="shareOnLinkedIn()">
+                                LinkedIn
+                            </a>
+<a class="share-btn share-btn--whatsapp" href="#" onclick="shareOnWhatsApp()">
+                                WhatsApp
+                            </a>
+</div>
+</div>
+</aside>
+</div>
+</article>
+<!-- Related Articles -->
+<section class="content-section content-section--alt scientific-note">
+<div class="container">
+<h2 class="section__title">Nota scientifica e sicurezza</h2>
+<ul>
+<li><strong>Non mescolare mai candeggina (ipoclorito di sodio)</strong> con <strong>ammoniaca</strong>, acidi (es. aceto/acido citrico), o altri detergenti: si possono liberare gas pericolosi.</li>
+<li><strong>Non mescolare acidi e basi</strong> (es. aceto o acido citrico con bicarbonato o ammoniaca): si neutralizzano a vicenda e possono generare vapori irritanti.</li>
+<li><strong>Non combinare perossido di idrogeno: usare solo <strong>prodotti registrati</strong> come biocidi, rispettando tempi di contatto ed etichetta: usare solo <strong>prodotti registrati</strong> come biocidi, rispettando tempi di contatto ed etichetta (acqua ossigenata: usare solo <strong>prodotti registrati</strong> come biocidi, rispettando tempi di contatto ed etichetta: usare solo <strong>prodotti registrati</strong> come biocidi, rispettando tempi di contatto ed etichetta) e aceto</strong>: possono formare <em>acido peracetico</em>, irritante e corrosivo.</li>
+<li>Prima disincrostare/sgrassare con <strong>detergente</strong>, poi (solo se necessario) <strong>disinfettare</strong> con prodotti conformi alle norme <strong>EN 13697, EN 1276, EN 14476</strong>, rispettando i tempi di contatto in etichetta.</li>
+<li>Per le <strong>superfici domestiche</strong> in generale: se si usa candeggina, preparare ~<strong>0,1% di cloro attivo</strong> (1 parte di candeggina al 5% + 49 parti d’acqua ≈ 20 mL/L). Per <strong>superfici a contatto con alimenti</strong>: sanificare con ~<strong>200 ppm</strong> (1 cucchiaio ≈ 15 mL di candeggina al 5% in 3,8 L di acqua ≈ 4 mL/L), quindi <strong>risciacquare</strong> con acqua potabile.</li>
+<li>Garantire <strong>areazione</strong> degli ambienti, usare <strong>guanti</strong> e seguire sempre le <strong>istruzioni in etichetta</strong>.</li>
+</ul>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<section class="related-articles">
+<div class="container">
+<h2 class="section__title">Articoli Correlati</h2>
+<div class="blog__grid">
+<!-- Placeholder for related articles - populate dynamically -->
+<article class="blog-card">
+<img alt="Articolo correlato" class="blog-card__image" loading="lazy" src=".././img/logo.svg"/>
+<div class="blog-card__content">
+<span class="blog-card__category">Guide</span>
+<h3 class="blog-card__title">
+<a href="#">Titolo Articolo Correlato</a>
+</h3>
+<p class="blog-card__excerpt">
+                                Breve descrizione dell'articolo correlato...
+                            </p>
+<time class="blog-card__date" datetime="2025-03-14">14 Marzo 2025</time>
+<time class="blog-card__date" datetime="2025-04-03">3 Aprile 2025</time>
+</div>
+</article>
+<article class="blog-card">
+<img alt="Articolo correlato" class="blog-card__image" loading="lazy" src=".././img/logo.svg"/>
+<div class="blog-card__content">
+<span class="blog-card__category">Consigli</span>
+<h3 class="blog-card__title">
+<a href="#">Altro Articolo Correlato</a>
+</h3>
+<p class="blog-card__excerpt">
+                                Altra breve descrizione...
+                            </p>
+<time class="blog-card__date" datetime="2025-01-17">17 Gennaio 2025</time>
+<time class="blog-card__date" datetime="2025-07-10">10 Luglio 2025</time>
+</div>
+</article>
+</div>
+<div class="blog__cta">
+<a class="btn btn--outline" href="index.html">Vedi tutti gli articoli</a>
+</div>
+</div>
+</section><footer class="footer">
+<div class="container">
+<div class="footer__content">
+<div class="footer__brand">
+<img alt="Logo Artigea s.r.l." class="footer__logo" src="../img/LogoCompleto.png"/>
+<p>Servizi di pulizia professionali a Pisa e provincia</p>
+<!-- Social Media Links -->
+<div class="footer__social">
+<a aria-label="Seguici su Instagram" href="https://www.instagram.com/artigeasrl/" rel="noopener noreferrer" target="_blank">
+<span style="color: #C32AA3;">
+<i class="fab fa-instagram"></i>
+</span>
+</a>
+<a aria-label="Seguici su Facebook" href="https://www.facebook.com/profile.php?id=61578224947960" rel="noopener noreferrer" target="_blank">
+<span style="color: #1877F2;">
+<i class="fab fa-facebook-f"></i>
+</span> </a>
+<a aria-label="Collegati su LinkedIn" href="https://www.linkedin.com/company/artigea-srl" rel="noopener noreferrer" target="_blank">
+<span style="color: #0A66C2;">
+<i class="fab fa-linkedin-in"></i>
+</span>
+</a>
+</div>
+</div>
+<div class="footer__links">
+<div class="footer__column">
+<h4>Servizi</h4>
+<ul>
+<li><a href="../index.html#servizi">Pulizie Civili</a></li>
+<li><a href="../index.html#servizi">Pulizie Industriali</a></li>
+<li><a href="../index.html#servizi">Sanificazioni</a></li>
+<li><a href="../index.html#servizi">Pulizie Vetri</a></li>
+</ul>
+</div>
+<div class="footer__column">
+<h4>Azienda</h4>
+<ul>
+<li><a href="../index.html#chi-siamo">Chi Siamo</a></li>
+<li><a href="../index.html#lavora-con-noi">Lavora con Noi</a></li>
+<li><a href="index.html">Blog</a></li>
+<li><a href="../index.html#contatti">Contatti</a></li>
+</ul>
+</div>
+<div class="footer__column">
+<h4>Legale</h4>
+<ul>
+<li><a href="../privacy-policy.html">Privacy Policy</a></li>
+<li><a href="../cookie-policy.html">Cookie Policy</a></li>
+<li><a href="../note-legali.html">Note Legali</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="footer__info">
+<p><strong>Artigea s.r.l.</strong> - P.IVA/C.F. 02522330541</p>
+<p>Sede legale: Via Polidori 14, 56032 Bientina (PI) - Sede operativa: Via Amedeo Modigliani 32, 56010 Vicopisano (PI)</p>
+<p>Tel: <a href="tel:+393462319824">346 231 9824</a> - Email: <a href="mailto:info@artigea.it">info@artigea.it</a></p>
+</div>
+<div class="footer__badges">
+<span class="professional-badge professional-badge--gdpr">
+<span class="badge-icon">🔒</span>
+                        GDPR Compliant
+                    </span>
+<span class="professional-badge professional-badge--haccp">
+<span class="badge-icon">🧪</span>
+                        HACCP Certified
+                    </span>
+<span class="professional-badge professional-badge--covid">
+<span class="badge-icon">🦠</span>
+                        COVID-19 Protocol
+                    </span>
+<span class="professional-badge professional-badge--eco">
+<span class="badge-icon">🌱</span>
+                        Eco-Friendly
+                    </span>
+<span class="professional-badge professional-badge--certified">
+<span class="badge-icon">✓</span>
+                        Certified Company
+                    </span>
+<span class="professional-badge professional-badge--insurance">
+<span class="badge-icon">🛡️</span>
+                        Fully Insured
+                    </span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookie-banner">
+<div class="cookie-banner__content">
+<p>
+                Questo sito utilizza cookie tecnici e di analytics per migliorare l'esperienza utente. 
+                I dati vengono raccolti in forma anonima per analisi statistiche.
+            </p>
+<div class="cookie-banner__actions">
+<button class="btn btn--primary" id="accept-cookies">Accetta</button>
+<a class="btn btn--outline" href="../cookie-policy.html">Scopri di più</a>
+</div>
+</div>
+</div>
+<!-- Scripts -->
+
+<script src="../js/cookie-consent.js"></script>
+
+<script>
+        // Social sharing functions
+        function shareOnFacebook() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, 'facebook-share', 'width=580,height=400');
+        }
+
+        function shareOnTwitter() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${title}`, 'twitter-share', 'width=580,height=400');
+        }
+
+        function shareOnLinkedIn() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, 'linkedin-share', 'width=580,height=400');
+        }
+
+        function shareOnWhatsApp() {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title);
+            window.open(`https://api.whatsapp.com/send?text=${title}%20${url}`, 'whatsapp-share');
+        }
+
+        // Track article reading progress
+        document.addEventListener('DOMContentLoaded', function() {
+            const article = document.querySelector('.article-body');
+            if (!article) return;
+
+            let maxScroll = 0;
+            const trackingThresholds = [25, 50, 75, 100];
+            const trackedThresholds = new Set();
+
+            function trackReadingProgress() {
+                const articleTop = article.offsetTop;
+                const articleHeight = article.offsetHeight;
+                const windowHeight = window.innerHeight;
+                const scrollTop = window.pageYOffset;
+
+                const articleBottom = articleTop + articleHeight;
+                const viewportBottom = scrollTop + windowHeight;
+
+                if (scrollTop > articleTop && viewportBottom < articleBottom) {
+                    const progress = Math.round(((scrollTop - articleTop) / (articleHeight - windowHeight)) * 100);
+                    maxScroll = Math.max(maxScroll, Math.min(progress, 100));
+
+                    trackingThresholds.forEach(threshold => {
+                        if (maxScroll >= threshold && !trackedThresholds.has(threshold)) {
+                            trackedThresholds.add(threshold);
+                            
+                            // Track with cookie consent
+                            if (window.cookieConsent && window.cookieConsent.hasConsent()) {
+                                window.cookieConsent.trackEvent('article_reading_progress', {
+                                    progress_percentage: threshold,
+                                    article_title: document.title
+                                });
+                            }
+                        }
+                    });
+                }
+            }
+
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                if (scrollTimeout) {
+                    clearTimeout(scrollTimeout);
+                }
+                scrollTimeout = setTimeout(trackReadingProgress, 100);
+            });
+        });
+    </script>
+</body>
+</html>
