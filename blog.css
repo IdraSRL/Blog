@@ -46,22 +46,91 @@
 /* Category pill buttons */
 .category-card {
   display: flex; align-items: center; gap: .5rem;
-  border: 1px solid var(--color-border, #e5e7eb);
+  border: 1px solid var(--color-border, #e2e8f0);
   border-radius: 999px;
-  padding: .55rem .8rem;
-  background: var(--color-surface, #fff);
+  padding: .65rem 1rem;
+  background: linear-gradient(135deg, var(--color-surface, #fff) 0%, #fafbfc 100%);
   cursor: pointer;
-  transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease, background-color .12s ease;
+  transition: all .2s cubic-bezier(0.4, 0, 0.2, 1);
   user-select: none;
+  position: relative;
+  overflow: hidden;
 }
-.category-card__icon { font-size: 1rem; }
-.category-card__name { font-weight: 600; font-size: .95rem; color: var(--color-text, #2d3748); }
-.category-card__count { margin-left: auto; font-size: .82rem; color: var(--color-text-muted, #718096); }
-.category-card:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,.06); border-color: var(--color-primary, #a14e97); }
-.category-card:focus { outline: none; box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-primary, #a14e97) 25%, transparent); }
-.category-card.active { 
-  background: color-mix(in oklab, var(--color-primary, #a14e97) 7%, #fff);
+
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  transition: left 0.5s ease;
+}
+
+.category-card:hover::before {
+  left: 100%;
+}
+
+.category-card__icon { 
+  font-size: 1.1rem; 
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+  transition: transform .2s ease;
+}
+
+.category-card__name { 
+  font-weight: 600; 
+  font-size: .95rem; 
+  color: var(--color-text, #2d3748);
+  letter-spacing: -0.01em;
+}
+
+.category-card__count { 
+  margin-left: auto; 
+  font-size: .82rem; 
+  color: var(--color-text-muted, #718096);
+  font-weight: 500;
+  padding: .2rem .5rem;
+  background: rgba(0,0,0,0.04);
+  border-radius: 12px;
+  transition: all .2s ease;
+}
+
+.category-card:hover { 
+  transform: translateY(-2px) scale(1.02); 
+  box-shadow: 0 8px 25px rgba(0,0,0,.08), 0 3px 10px rgba(0,0,0,.04); 
   border-color: var(--color-primary, #a14e97);
+}
+
+.category-card:hover .category-card__icon {
+  transform: scale(1.1);
+}
+
+.category-card:hover .category-card__count {
+  background: rgba(161, 78, 151, 0.1);
+  color: var(--color-primary, #a14e97);
+}
+
+.category-card:focus { 
+  outline: none; 
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-primary, #a14e97) 25%, transparent), 0 4px 12px rgba(0,0,0,.06); 
+}
+
+.category-card.active { 
+  background: linear-gradient(135deg, color-mix(in oklab, var(--color-primary, #a14e97) 8%, #fff) 0%, color-mix(in oklab, var(--color-primary, #a14e97) 12%, #fff) 100%);
+  border-color: var(--color-primary, #a14e97);
+  box-shadow: 0 4px 12px rgba(161, 78, 151, 0.15);
+  transform: translateY(-1px);
+}
+
+.category-card.active .category-card__icon {
+  transform: scale(1.05);
+}
+
+.category-card.active .category-card__count {
+  background: rgba(161, 78, 151, 0.15);
+  color: var(--color-primary, #a14e97);
+  font-weight: 600;
 }
 
 /* Filter status */

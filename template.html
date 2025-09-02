@@ -30,7 +30,8 @@
 <!-- Stylesheet -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/> <link href="../css/main.css" rel="stylesheet"/>
 <link href="../css/components.css" rel="stylesheet"/>
-<link href="../css/blog.css" rel="stylesheet"/>
+<link href="blog.css" rel="stylesheet"/>
+<link href="../css/blog-article.css" rel="stylesheet"/>
 <link href="../css/mobile-responsive.css" rel="stylesheet"/>
 <!-- Google Analytics GA4 -->
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
@@ -152,65 +153,138 @@
 <article class="article-content">
 <div class="container">
 <div class="article-body">
-<!-- CONTENT PLACEHOLDER - Replace with actual article content -->
-<p>Questo è il template base per gli articoli del blog. Sostituisci questo contenuto con il testo dell'articolo.</p>
-<h2>Esempio di Sottotitolo</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-<h3>Sottosezione</h3>
-<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-<ul>
-<li>Punto elenco 1</li>
-<li>Punto elenco 2</li>
-<li>Punto elenco 3</li>
-</ul>
-<blockquote class="article-quote">
-                        "Citazione di esempio per evidenziare concetti importanti nell'articolo."
+                <!-- MAIN ARTICLE CONTENT -->
+                <div class="article-main">
+                    <!-- CONTENT PLACEHOLDER - Replace with actual article content -->
+                    <div class="article-intro">
+                        <p class="lead">Questo è il template base per gli articoli del blog. Sostituisci questo contenuto con il testo dell'articolo. Questa introduzione dovrebbe catturare l'attenzione del lettore e riassumere i punti chiave.</p>
+                    </div>
+
+                    <h2>Introduzione al Problema</h2>
+                    <p>Inizia ogni articolo identificando chiaramente il problema o la sfida che stai affrontando. Questo aiuta i lettori a capire immediatamente se l'articolo è rilevante per le loro esigenze.</p>
+
+                    <h2>Materiali e Strumenti Necessari</h2>
+                    <div class="materials-list">
+                        <h3>Prodotti consigliati:</h3>
+                        <ul>
+                            <li><strong>Detergente specifico</strong> - per la pulizia iniziale</li>
+                            <li><strong>Panni in microfibra</strong> - per asciugatura senza aloni</li>
+                            <li><strong>Spazzole appropriate</strong> - per superfici delicate</li>
+                        </ul>
+                        
+                        <h3>Strumenti necessari:</h3>
+                        <ul>
+                            <li>Secchio per soluzioni</li>
+                            <li>Guanti protettivi</li>
+                            <li>Aspirapolvere (se necessario)</li>
+                        </ul>
+                    </div>
+
+                    <h2>Procedura Passo-Passo</h2>
+                    <div class="step-by-step">
+                        <div class="step">
+                            <h3><span class="step-number">1</span> Preparazione dell'Area</h3>
+                            <p>Descrivi come preparare l'area di lavoro, rimuovere oggetti, proteggere superfici sensibili.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <h3><span class="step-number">2</span> Applicazione del Prodotto</h3>
+                            <p>Spiega come applicare correttamente i prodotti, dosaggi, tempi di azione.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <h3><span class="step-number">3</span> Pulizia e Risciacquo</h3>
+                            <p>Dettagli sulla tecnica di pulizia, movimenti corretti, risciacquo finale.</p>
+                        </div>
+                        
+                        <div class="step">
+                            <h3><span class="step-number">4</span> Asciugatura e Finitura</h3>
+                            <p>Come completare il lavoro per ottenere risultati professionali.</p>
+                        </div>
+                    </div>
+
+                    <blockquote class="article-quote">
+                        "Ricorda sempre: la sicurezza viene prima di tutto. Usa sempre i dispositivi di protezione individuale e assicurati di avere una buona ventilazione."
                     </blockquote>
-<p>Continua con il resto del contenuto dell'articolo...</p>
-<!-- END CONTENT PLACEHOLDER -->
-</div>
-<!-- Article Sidebar -->
-<aside class="article-sidebar">
-<!-- Author Info -->
-<div class="author-card">
-<div class="author-info">
-<h3>Artigea s.r.l.</h3>
-<p>Esperti in servizi di pulizia professionale a Pisa e provincia. Condividiamo consigli utili per la pulizia e l'igiene.</p>
-</div>
-</div>
-<!-- Contact CTA -->
-<div class="sidebar-cta">
-<h3>Hai bisogno di pulizie professionali?</h3>
-<p>Contattaci per un preventivo gratuito</p>
-<a class="btn btn--primary" href="../index.html#contatti">Richiedi Preventivo</a>
-<a class="btn btn--outline" href="tel:+393462319824">
-<span class="btn__icon">📞</span>
+
+                    <h2>Consigli Professionali</h2>
+                    <div class="pro-tips">
+                        <div class="tip">
+                            <h4>💡 Suggerimento Pro</h4>
+                            <p>Includi sempre consigli pratici basati sull'esperienza professionale di Artigea.</p>
+                        </div>
+                        
+                        <div class="tip">
+                            <h4>⚠️ Attenzione</h4>
+                            <p>Evidenzia eventuali rischi o precauzioni importanti da seguire.</p>
+                        </div>
+                        
+                        <div class="tip">
+                            <h4>🔧 Trucco del Mestiere</h4>
+                            <p>Condividi tecniche specifiche che solo i professionisti conoscono.</p>
+                        </div>
+                    </div>
+
+                    <h2>Errori Comuni da Evitare</h2>
+                    <ul class="error-list">
+                        <li><strong>Errore 1:</strong> Descrizione dell'errore e come evitarlo</li>
+                        <li><strong>Errore 2:</strong> Altro errore comune con spiegazione</li>
+                        <li><strong>Errore 3:</strong> Terzo errore frequente e soluzione</li>
+                    </ul>
+
+                    <h2>Manutenzione e Prevenzione</h2>
+                    <p>Concludi sempre con consigli su come mantenere i risultati nel tempo e prevenire problemi futuri.</p>
+
+                    <h2>Quando Chiamare i Professionisti</h2>
+                    <p>Spiega in quali situazioni è meglio affidarsi a professionisti come Artigea, evidenziando i vantaggi del servizio professionale.</p>
+                    <!-- END CONTENT PLACEHOLDER -->
+                </div>
+
+                <!-- Article Sidebar -->
+                <aside class="article-sidebar">
+                    <!-- Author Info -->
+                    <div class="author-card">
+                        <div class="author-info">
+                            <h3>Artigea s.r.l.</h3>
+                            <p>Esperti in servizi di pulizia professionale a Pisa e provincia. Condividiamo consigli utili per la pulizia e l'igiene basati su oltre 10 anni di esperienza nel settore.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact CTA -->
+                    <div class="sidebar-cta">
+                        <h3>Hai bisogno di pulizie professionali?</h3>
+                        <p>Contattaci per un preventivo gratuito e personalizzato</p>
+                        <a class="btn btn--primary" href="../index.html#contatti">Richiedi Preventivo</a>
+                        <a class="btn btn--outline" href="tel:+393462319824">
+                            <span class="btn__icon">📞</span>
                             346 231 9824
                         </a>
-</div>
-<!-- Share Buttons -->
-<div class="share-buttons">
-<h4>Condividi questo articolo</h4>
-<div class="share-buttons__list">
-<a class="share-btn share-btn--facebook" href="#" onclick="shareOnFacebook()">
+                    </div>
+                    
+                    <!-- Share Buttons -->
+                    <div class="share-buttons">
+                        <h4>Condividi questo articolo</h4>
+                        <div class="share-buttons__list">
+                            <a class="share-btn share-btn--facebook" href="#" onclick="shareOnFacebook()">
                                 Facebook
                             </a>
-<a class="share-btn share-btn--twitter" href="#" onclick="shareOnTwitter()">
+                            <a class="share-btn share-btn--twitter" href="#" onclick="shareOnTwitter()">
                                 Twitter
                             </a>
-<a class="share-btn share-btn--linkedin" href="#" onclick="shareOnLinkedIn()">
+                            <a class="share-btn share-btn--linkedin" href="#" onclick="shareOnLinkedIn()">
                                 LinkedIn
                             </a>
-<a class="share-btn share-btn--whatsapp" href="#" onclick="shareOnWhatsApp()">
+                            <a class="share-btn share-btn--whatsapp" href="#" onclick="shareOnWhatsApp()">
                                 WhatsApp
                             </a>
-</div>
-</div>
-</aside>
+                        </div>
+                    </div>
+                </aside>
+            </div>
 </div>
 </article>
 <!-- Related Articles -->
-<section class="content-section content-section--alt scientific-note">
+<section class="scientific-note">
 <div class="container">
 <h2 class="section__title">Nota scientifica e sicurezza</h2>
 <ul>
@@ -224,7 +298,10 @@
 </div>
 </section>
 </main>
+
 <!-- Footer -->
+
+<!-- Related Articles -->
 <section class="related-articles">
 <div class="container">
 <h2 class="section__title">Articoli Correlati</h2>
