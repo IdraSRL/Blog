@@ -172,7 +172,7 @@
 }
 .blog-card__image { width: 100%; aspect-ratio: 16/10; object-fit: contain; background: var(--color-dark, #f6f7f8); }
 .blog-card__content { padding: 1rem 1rem 1.2rem; }
-.blog-card__category { display: inline-block; font-size: .85rem; color: var(--color-primary, #a14e97); margin-bottom: .25rem; }
+.blog-card__category { display: inline-block; font-size: .85rem; margin-bottom: .25rem; }
 .blog-card__title { font-size: 1.08rem; line-height: 1.35; margin: .1rem 0 .4rem; }
 .blog-card__title a { color: inherit; text-decoration: none; }
 .blog-card__title a:hover { text-decoration: underline; }
